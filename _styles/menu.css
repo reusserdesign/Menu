@@ -1,22 +1,22 @@
-#nav {
+ul {
   margin: 0;
   padding: 0;
   zoom: 1;
 }
-#nav li {
+ul li {
   float: left;
   list-style: none;
   position: relative;
 }
-#nav li a {
+ul li a {
   display: block;
   padding: 10px 25px;
   text-decoration: none;
 }
-#nav li:hover > ul {
+ul li:hover > ul {
   display: block;
 }
-#nav ul {
+ul ul {
   display: none;
   left: 0;
   margin: 0;
@@ -24,20 +24,20 @@
   position: absolute;
   width: 180px;
 }
-#nav ul li {
+ul ul li {
   float: none;
 }
-#nav ul a {
+ul ul a {
   padding: 8px 25px;
 }
-#nav ul ul {
+ul ul ul {
   left: 180px;
   top: 0;
 }
-#nav:before, #nav:after {
+ul:before, ul:after {
   content: "";
   display: table;
 }
-#nav:after {
+ul:after {
   clear: both;
 }

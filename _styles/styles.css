@@ -1,4 +1,4 @@
-#nav {
+ul {
   display: inline-block;
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -11,23 +11,7 @@
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-#nav > li:first-child {
-  -moz-border-radius: 10px 0 0 10px;
-  -webkit-border-radius: 10px 0 0 10px;
-  -o-border-radius: 10px 0 0 10px;
-  -ms-border-radius: 10px 0 0 10px;
-  -khtml-border-radius: 10px 0 0 10px;
-  border-radius: 10px 0 0 10px;
-}
-#nav > li:last-child {
-  -moz-border-radius: 0 10px 10px 0;
-  -webkit-border-radius: 0 10px 10px 0;
-  -o-border-radius: 0 10px 10px 0;
-  -ms-border-radius: 0 10px 10px 0;
-  -khtml-border-radius: 0 10px 10px 0;
-  border-radius: 0 10px 10px 0;
-}
-#nav > li {
+ul > li {
   -moz-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -41,22 +25,22 @@
   background-image: linear-gradient(top, #f5f5f5, #c9c9c9);
   background-repeat: repeat-x;
 }
-#nav > li:hover {
+ul > li:hover {
   background-position: 0 -15px;
 }
-#nav > li:active {
+ul > li:active {
   background-position: 0 -30px;
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
   -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-#nav > li a {
+ul > li a {
   color: #666;
   font-size: .875em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
-#nav > li ul {
+ul > li ul {
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -69,10 +53,10 @@
   border-radius: 10px;
   z-index: 999;
 }
-#nav > li ul ul {
+ul > li ul ul {
   left: 140px;
 }
-#nav > li > ul > li:last-child {
+ul > li > ul > li:last-child {
   -moz-border-radius: 0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   -o-border-radius: 0 0 10px 10px;
@@ -80,7 +64,7 @@
   -khtml-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
-#nav > li > ul > li > ul li:first-child {
+ul > li > ul > li > ul li:first-child {
   -moz-border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
@@ -88,7 +72,7 @@
   -khtml-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
 }
-#nav > li > ul > li > ul li:last-child {
+ul > li > ul > li > ul li:last-child {
   -moz-border-radius: 0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   -o-border-radius: 0 0 10px 10px;
@@ -96,7 +80,7 @@
   -khtml-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
-#nav > li li {
+ul > li li {
   -moz-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -110,10 +94,10 @@
   background-image: linear-gradient(top, #c9c9c9, #afafaf);
   background-repeat: repeat-x;
 }
-#nav > li li:hover {
+ul > li li:hover {
   background-position: 0 -15px;
 }
-#nav > li li:active {
+ul > li li:active {
   background-position: 0 -30px;
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
@@ -121,12 +105,45 @@
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+#content > ul > li:first-child {
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -khtml-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+#content > ul > li:last-child {
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -khtml-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+
 body {
-  background: #444;
+  background: #666;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 #content {
   margin: 100px auto;
+  text-align: center;
   width: 497px;
+}
+
+pre {
+  color: #DFDFDF;
+  font-size: 1.5em;
+  margin: 2em 0;
+  text-shadow: 0 1px 2px #333;
+}
+
+#note {
+  color: #AFAFAF;
+  font-size: .875em;
+  margin-top: 5em;
+  text-shadow: 0 1px 2px #333;
 }

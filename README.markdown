@@ -15,7 +15,7 @@
 <h2>How To Use</h2>
 <p>In your HTML, create a navigation menu using an unordered list. For example:</p>
 <pre>
-	&lt;ul id="nav"&gt;
+	&lt;ul&gt;
 		&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href="#"&gt;The Band&lt;/a&gt;
 			&lt;ul&gt;
@@ -82,7 +82,7 @@
 <pre>
 	// Basic setup
 	ul {
-		@include menu();
+		@include menu;
 	}
 	
 	// or specifying different values for paddings and widths
@@ -96,7 +96,7 @@
 <pre>
 	ul {
 		// Initialize Menu 
-		@include menu();
+		@include menu;
 		
 		// Style anchors within drop down
 		a {

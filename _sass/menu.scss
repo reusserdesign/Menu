@@ -31,4 +31,4 @@
 }
 
 // Calling the mixin on our navigation element
-#nav { @include menu(); }
+ul { @include menu; }
