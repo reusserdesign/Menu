@@ -1,0 +1,60 @@
+// Adding Compass to project
+@import "compass";
+
+#nav {
+	display: inline-block;
+	@include box-shadow(0 2px 4px rgba(0,0,0,.4));
+	@include border-radius(10px);
+	& > li:first-child { @include border-radius(10px 0 0 10px); }
+	& > li:last-child { @include border-radius(0 10px 10px 0); }
+	> li {
+		@include transition(all .2s ease);
+		background: darken(#EFEFEF, 15%);
+		@include background-image(linear-gradient(top, #F5F5F5, darken(#EFEFEF, 15%)));
+		background-repeat: repeat-x;
+		&:hover {
+			background-position: 0 -15px;
+		}
+		&:active {
+			background-position: 0 -30px;
+			@include box-shadow(inset 0 1px 3px rgba(0,0,0,.4));
+		}
+		a {
+			color: #666;
+			font-size: .875em;
+			text-shadow: 0 1px 0 rgba(255,255,255,.4);
+		}
+		ul {
+			@include box-shadow(0 2px 4px rgba(0,0,0,.4));
+			@include border-radius(10px);
+			z-index: 999;
+			ul {
+				left: 140px;
+			}
+		}
+		> ul > li:last-child { @include border-radius(0 0 10px 10px); }
+		> ul > li > ul li:first-child { @include border-radius(10px 10px 0 0); }
+		> ul > li > ul li:last-child { @include border-radius(0 0 10px 10px); }
+		li {
+			@include transition(all .2s ease);
+			background: darken(#EFEFEF, 25%);
+			@include background-image(linear-gradient(top, darken(#EFEFEF, 15%), darken(#EFEFEF, 25%)));
+			background-repeat: repeat-x;
+			&:hover {
+				background-position: 0 -15px;
+			}
+			&:active {
+				background-position: 0 -30px;
+				@include box-shadow(inset 0 1px 3px rgba(0,0,0,.4));
+			}
+		}
+	}
+}
+
+// Body properties
+body { background: #444; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+#content {
+	margin: 100px auto;
+	width: 497px;
+}
