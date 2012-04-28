@@ -91,6 +91,20 @@
 	}
 </pre>
 
+<p>Ta-da! This will give you basic drop down functionality. Feel free to add in styles for your lists, anchors, etc after the mixin call. For example:</p>
+
+<pre>
+	ul {
+		// Initialize Menu 
+		@include menu();
+		
+		// Style anchors within drop down
+		a {
+			background: red;
+			color: #FFF:
+		}
+	}
+</pre>
 
 <h2>Latest Changes</h2>
 
