@@ -6,7 +6,7 @@
 
 <h2>Browser Support</h2>
 <ul>
-	<li>Internet Explorer 7+</li>
+	<li>Internet Explorer 8+</li>
 	<li>Firefox 3.6+</li>
 	<li>Chrome 9+</li>
 	<li>Safari 4+</li>
